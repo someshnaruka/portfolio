@@ -13,7 +13,7 @@ export const Home = (props) => {
         id="home"
         className="h-screen bg-[#0a192f] w-full  md:h-full"
       >
-        <div className="text-white flex flex-col-reverse md:flex-row justify-center md:justify-evenly items-center p-5">
+        <div className="text-white flex flex-col-reverse md:flex-row justify-center items-center p-5">
           {" "}
           <div className="flex flex-col justify-between items-start mx-6 md:mx-12 md:mt-32 mt-10 w-full md:w-3/4 ">
             <h1 className="md:text-2xl text-xl p-4 text-[#ccd6f6]">
@@ -45,20 +45,20 @@ export const Home = (props) => {
               applications using MongoDB, Express.js, React.js, and Node.js.
             </p>
             <div className="flex justify-between items-center gap-5 p-4">
-              <a className=" cursor-pointer ">
+              <a className=" cursor-pointer " href="https://github.com/someshnaruka/" target="_blank">
                 <FaGithub size={"20px"} className="social-icons"></FaGithub>
               </a>
-              <a className="cursor-pointer ">
+              <a className="cursor-pointer " href="https://www.linkedin.com/in/someshnaruka/" target="_blank">
                 <FaLinkedin size={"20px"} className="social-icons"></FaLinkedin>
               </a>
             </div>
             <a href={resume} download={"Somesh Naruka Resume"}>
-              <button className="text-xs md:text-sm border border-white rounded-lg border-2 p-2 mx-3 hover:bg-red-400 hover:text-black hover:border-black flex justify-between items-center gap-2 hover:scale-105 duration-200">
+              <button className="text-xs md:text-sm border border-white rounded-lg border-2 p-2 mx-3 md:hover:bg-red-400 hover:text-black hover:border-black flex justify-between items-center gap-2 hover:scale-105 duration-200">
                 Download Resume <BiSolidDownload></BiSolidDownload>
               </button>
             </a>
           </div>
-          <div className=" flex justify-center items-center mr-6 md:mr-12 mt-32 w-full md:w-1/2 ">
+          <div className=" flex justify-center items-center mx-auto mt-32 w-full md:w-1/2 ">
             <img
               src={profile}
               alt="Profile Image"

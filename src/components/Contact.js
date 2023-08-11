@@ -118,7 +118,7 @@ console.log(show);
           ></textarea>
           <button
             onClick={sendEmail}
-            className="flex mx-auto my-3 border-[1.5px] border-white bg-transparent hover:bg-red-400 hover:border-red-400 shadow-lg shadow-black px-3 py-1 rounded-sm hover:scale-105 duration-200 text-white  text-sm cursor-pointer"
+            className="flex mx-auto my-3 border-[1.5px] border-white bg-transparent md:hover:bg-red-400 md:hover:border-red-400 shadow-lg shadow-black px-3 py-1 rounded-sm hover:scale-105 duration-200 text-white  text-sm cursor-pointer"
           >Submit</button>
         </form>
       </div>

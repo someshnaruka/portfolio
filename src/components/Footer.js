@@ -36,10 +36,10 @@ function Footer() {
         </p>
         <p className="text-xs"> You may also find me on these platforms</p>
         <p className="flex justify-between items-center gap-3">
-          <a className=" cursor-pointer ">
-            <FaGithub size={"20px"} className="social-icons"></FaGithub>
+          <a className=" cursor-pointer " href="https://github.com/someshnaruka/" target="_blank">
+            <FaGithub size={"20px"} className="social-icons" ></FaGithub>
           </a>
-          <a className="cursor-pointer ">
+          <a className="cursor-pointer " href="https://www.linkedin.com/in/someshnaruka/" target="_blank">
             <FaLinkedin size={"20px"} className="social-icons"></FaLinkedin>
           </a>
         </p>
