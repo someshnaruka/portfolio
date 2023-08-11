@@ -79,12 +79,12 @@ console.log(show);
         show && <Modal onmodal={handleModal}></Modal>
       }
       
-        <div className="mx-6 md:mx-12 mt-32  flex justify-normal items-start flex-col ">
-          <h1 className="text-2xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
+        <div className="mx-6 md:mx-12 mt-32  flex justify-normal items-start flex-col md:p-8">
+          <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
             {" "}
             Contact
           </h1>
-          <h2 className="text-sm py-4 w-3/4 text-[#ccd6f6]">
+          <h2 className="text-sm md:text-2xl py-4 w-3/4 text-[#ccd6f6]">
             Submit the form below or shoot me an email- someshnaruka30@gmail.com
           </h2>
         </div>
@@ -97,7 +97,7 @@ console.log(show);
             placeholder="Name"
             name="from_name"
             value={data.from_name}
-            className="md:w-3/4 w-full p-1 text-xs bg-[#ccd6f6]"
+            className="md:w-3/4 w-full p-1 text-xs md:text-xl bg-[#ccd6f6]"
             onChange={handlechange}
           ></input>
           <input
@@ -106,7 +106,7 @@ console.log(show);
             name="user_email"
             value={data.user_email}
             onChange={handlechange}
-            className="md:w-3/4 w-full p-1 text-xs bg-[#ccd6f6]"
+            className="md:w-3/4 w-full p-1 text-xs md:text-xl bg-[#ccd6f6]"
           ></input>
           <textarea
             placeholder="Message"
@@ -114,12 +114,13 @@ console.log(show);
             name="message"
             value={data.message}
             onChange={handlechange}
-            className="md:w-3/4 w-full p-1 text-xs bg-[#ccd6f6]"
+            className="md:w-3/4 w-full p-1 text-xs md:text-xl bg-[#ccd6f6]"
           ></textarea>
-          <button
+          <input
             onClick={sendEmail}
-            className="flex mx-auto my-3 border-[1.5px] border-white bg-transparent md:hover:bg-red-400 md:hover:border-red-400 shadow-lg shadow-black px-3 py-1 rounded-sm hover:scale-105 duration-200 text-white  text-sm cursor-pointer"
-          >Submit</button>
+            value="Submit"
+            className="flex text-center mx-auto my-3 border-[1.5px] border-white bg-transparent md:hover:bg-red-400 md:hover:border-red-400 shadow-lg shadow-black px-2 py-1 md:px-3 md:py-2 rounded-md hover:scale-105 duration-200 text-white  text-sm md:text-xl cursor-pointer"
+          ></input>
         </form>
       </div>
     </>

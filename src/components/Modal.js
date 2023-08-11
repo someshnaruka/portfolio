@@ -9,12 +9,12 @@ function Modal(props) {
         onClick={props.onmodal}
       >
         <div
-          className="animate__animated animate__bounceIn bg-[#1F2937]  text-white border-2 border-transparent shadow-lg shadow-black rounded-md flex flex-col items-center justify-between p-10 cursor-pointer"
+          className="animate__animated animate__bounceIn bg-[#1F2937]  text-white border-2 border-transparent shadow-lg shadow-black rounded-xl flex flex-col items-center justify-between p-10 cursor-pointer"
           onClick={props.onmodal}
         >
-        <img src={smile} className="w-[50px] "></img>
-          <p>Thank You for Contacting.</p>
-          <p>I'll get back to you ASAP.</p>
+        <img src={smile} className="w-[50px] md:w-[100px]"></img>
+          <p className="md:text-2xl">Thank You for Contacting.</p>
+          <p className="md:text-2xl" >I'll get back to you ASAP.</p>
         </div>
       </div>
     </>

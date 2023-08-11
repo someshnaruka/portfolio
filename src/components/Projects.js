@@ -86,12 +86,12 @@ function Projects() {
         className=" bg-[#16213E] flex flex-col justify-between items-start"
         id="skills"
       >
-        <div className="mx-6 md:mx-12  mt-32  flex flex-col gap-3 justify-between items-start">
+        <div className="mx-6 md:mx-12  mt-32  flex flex-col gap-3 justify-between items-start md:p-8">
           {" "}
-          <h1 className="text-2xl  text-[#ccd6f6] font-bold border-b-4  border-b-red-400  ">
+          <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400  ">
             Projects
           </h1>
-          <h2 className="text-base md:text-xl text-[#ccd6f6]">
+          <h2 className="text-base md:text-3xl text-[#ccd6f6]">
             Some of the noteworthy projects I've built:
           </h2>
         </div>

@@ -18,7 +18,7 @@ const About = (props) => {
 
   const activeBorder={
     borderBottomColor:"rgb(248 113 113)",
-    borderBottomWidth:"2" +"px",
+    borderBottomWidth:"4" +"px",
   }
   return (
     <>
@@ -26,8 +26,8 @@ const About = (props) => {
         className=" bg-[#16213E]  "
         id="About"
       >
-      <div className=" flex flex-col justify-between items-start ">
-        <h1 className="text-2xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 mx-6 md:mx-12  mt-32 ">
+      <div className=" flex flex-col justify-between items-start md:p-8 ">
+        <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 mx-6 md:mx-12  mt-32 ">
           About Me
         </h1>
 
@@ -39,26 +39,26 @@ const About = (props) => {
             <div className="w-full md:w-3/4 my-4">
               <div className="flex justify-between items-center text-[#ccd6f6]  mx-2 ">
                 <p
-                  className="text-xs  md:text-md md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500 cursor-pointer"
-                  onClick={(event) => handleClick("about")}  style={section==="about" ? activeBorder : {borderBottomWidth:"2px"}}
+                  className="text-xs  md:text-2xl md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500 cursor-pointer"
+                  onClick={(event) => handleClick("about")}  style={section==="about" ? activeBorder : {borderBottomWidth:"4px"}}
                 >
                   About Me
                 </p>
                 <p
-                  className="text-xs md:text-md md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500  cursor-pointer"
-                  onClick={(event) => handleClick("education")} style={section==="education" ? activeBorder : {borderBottomWidth:"2px"}}
+                  className="text-xs md:text-2xl md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500  cursor-pointer"
+                  onClick={(event) => handleClick("education")} style={section==="education" ? activeBorder : {borderBottomWidth:"4px"}}
                 >
                   Education
                 </p>
                 <p
-                  className="text-xs md:text-md md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500 cursor-pointer"
-                  onClick={(event) => handleClick("work")}  style={section==="work" ? activeBorder : {borderBottomWidth:"2px"}}
+                  className="text-xs md:text-2xl md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500 cursor-pointer"
+                  onClick={(event) => handleClick("work")}  style={section==="work" ? activeBorder : {borderBottomWidth:"4px"}}
                 >
                   Work Experience
                 </p>
                 <p
-                  className="text-xs md:text-md md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500  cursor-pointer"
-                  onClick={(event) => handleClick("interest")}  style={section==="interest" ? activeBorder : {borderBottomW:"2px"}}
+                  className="text-xs md:text-2xl md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500  cursor-pointer"
+                  onClick={(event) => handleClick("interest")}  style={section==="interest" ? activeBorder : {borderBottomWidth:"4px"}}
                 >
                   Interests
                 </p>

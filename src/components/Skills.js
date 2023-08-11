@@ -81,19 +81,19 @@ function Skills() {
         className="flex flex-col justify-normal gap-3 items-start bg-[#0a192f] w-full h-full"
         id="skills"
       >
-        <div className="mx-6 md:mx-12  mt-32 flex flex-col gap-3 justify-between items-start">
+        <div className="mx-6 md:mx-12  mt-32 flex flex-col gap-3 justify-between items-start md:p-8">
           {" "}
-          <h1 className="text-2xl  text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
+          <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
             Skills
           </h1>
-          <h2 className="text-base md:text-xl text-[#ccd6f6] w-3/4">
+          <h2 className="text-base md:text-3xl text-[#ccd6f6] w-3/4">
             {" "}
             These are the technologies I've worked with:
           </h2>
         </div>
 
        <div className="flex flex-col gap-3 mb-6 md:mb-12">
-          <div className="flex justify-center m-auto items-center flex-row flex-wrap gap-5">
+          <div className="flex justify-center m-auto items-center flex-row flex-wrap md:gap-8 gap-5 ">
             {skill.map((post, index) => {
               return (
                 <SkillCard

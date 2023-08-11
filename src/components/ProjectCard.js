@@ -5,8 +5,8 @@ function ProjectCard(props) {
     const [hover,setHover]=useState(false);
   return (
     <>
-      <div className=" flex flex-col justify-evenly gap-2 items-start border-1 border-transparent rounded-xl md:w-1/3 w-full shadow-lg shadow-black m-4 overflow-hidden bg-[#1F2937] md:h-[400px] min-h-[300px] py-2 px-4">
-        <h1 className=" text-md md:text-xl border-b-2 border-b-white text-red-400 ">
+      <div className=" flex flex-col justify-evenly gap-2 items-start border-1 border-transparent rounded-xl md:w-1/3 w-full shadow-lg shadow-black m-4 overflow-hidden bg-[#1F2937] md:h-[600px] min-h-[300px] py-2 px-4">
+        <h1 className=" text-md md:text-3xl border-b-2 border-b-white text-red-400 ">
           {props.title}
         </h1>
         <div className="w-full flex flex-col justify-center items-center relative" onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
@@ -32,13 +32,13 @@ function ProjectCard(props) {
         <div className="flex justify-normal gap-3 items-center flex-wrap w-full ">
           {props.skill.map((post, index) => {
             return (
-              <div className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
+              <div className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs md:text-lg px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
                 {post}
               </div>
             );
           })}
         </div>
-        <a href={props.gitlink}target="_blank" className="text-white"><FiExternalLink></FiExternalLink></a>
+        <a href={props.gitlink} target="_blank" className="text-white "><FiExternalLink size={"30px"} className="text-[#8892b0] hover:text-white" ></FiExternalLink></a>
       </div>
     </>
   );
