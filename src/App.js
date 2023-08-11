@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import toast, { Toaster } from 'react-hot-toast';
+import About from './components/About';
+import  Home  from './components/Home';
+import Navbar from './components/Navbar';
+import 'animate.css';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import { useEffect } from 'react';
+
 
 function App() {
+  useEffect(() => {
+    window.history.scrollRestoration = 'manual'
+  }, []);
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Toaster></Toaster>
+      <Navbar></Navbar>
+      <Home></Home>
+      <About></About>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Contact></Contact>
+      <Footer></Footer>
+   
     </div>
   );
 }
