@@ -5,15 +5,17 @@ import resume from "../assets/resume.pdf";
 import profile from "../assets/profile1.jpg";
 import { BiSolidDownload } from "react-icons/bi";
 
+
 export const Home = (props) => {
   return (
     <>
+  
       <div
         name="home"
         id="home"
-        className="h-screen bg-[#0a192f] w-full  "
+        className="h-screen bg-[#0a192f] w-full"
       >
-        <div className="text-white flex flex-col-reverse md:flex-row justify-center  items-center p-5">
+        <div className="text-white flex flex-col-reverse md:flex-row justify-center  items-center p-4">
           {" "}
           <div className="flex flex-col  h-full md:gap-4 justify-between items-start mx-6 md:mx-12 md:mt-32 mt-10 w-full md:w-3/4 ">
             <h1 className="md:text-6xl text-xl p-4 text-[#ccd6f6]">
@@ -67,6 +69,7 @@ export const Home = (props) => {
           </div>
         </div>
       </div>
+    
     </>
   );
 };

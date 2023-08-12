@@ -74,12 +74,12 @@ function handleModal()
 console.log(show);
   return (
     <>
-      <div name="contact" className="flex md:h-full h-screen flex-col items-start justify-normal  bg-[#0a192f]  relative " id="contact">
+      <div name="contact" className="flex  h-screen flex-col items-start justify-normal  bg-[#0a192f]  relative p-3" id="contact">
       {
         show && <Modal onmodal={handleModal}></Modal>
       }
       
-        <div className="mx-6 md:mx-12 mt-32  flex justify-normal items-start flex-col md:p-8">
+        <div className="mx-6 md:mx-12 mt-6  flex justify-normal items-start flex-col ">
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
             {" "}
             Contact

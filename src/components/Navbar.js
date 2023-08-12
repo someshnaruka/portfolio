@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/Logo.png";
+import logo from "../assets/logo-new.png";
 import { FaBars,FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
@@ -12,10 +12,10 @@ export const Navbar = () => {
         setNav(!nav);
     }
 
-    const activeBorder={
-      borderBottomColor:"rgb(248 113 113)",
-      borderBottomWidth:"4" +"px",
-    }
+    // const activeBorder={
+    //   borderBottomColor:"rgb(248 113 113)",
+    //   borderBottomWidth:"4" +"px",
+    // }
     function handleClick(value) {
       setSection(value);
       console.log(section);
@@ -23,28 +23,28 @@ export const Navbar = () => {
    
   return (
     <>
-      <div className="fixed z-10 w-full h-[60px] md:h-[100px] flex justify-between items-center  bg-[#0a192f] px-4 text-[#D1D5DB] ">
+      <div className="fixed z-10 w-full h-[60px] md:h-[100px] flex justify-between items-center  bg-[#0a192f] px-2 text-[#D1D5DB] ">
         <div>
           {" "}
-          <img src={logo} alt="Logo" className="w-[100px]"></img>
+          <img src={logo} alt="Logo" className="w-[60px] md:w-[100px]"></img>
         </div>
         {/* Menu section */}
         <div>
           <ul className="hidden md:flex justify-between gap-4 items-center p-4 md:p-6">
-            <li className="home text-lg  cursor-pointer border-b-2 border-b-transparent hover:border-b-red-400 duration-500" style={section==="home" ? activeBorder : {borderBottomWidth:"4px"}}>
-            <Link  to="home" className="text-3xl" onClick={(event) => handleClick("home")}  spy={true} smooth={true} offset={50} duration={500}>
+            <li >
+            <Link  to="home" activeClass="active" className="text-3xl nav-item"  spy={true} smooth={true} offset={-100} duration={500}>
           Home
         </Link></li>
-            <li className="text-lg cursor-pointer border-b-2 border-b-transparent hover:border-b-red-400 duration-500" style={section==="about" ? activeBorder : {borderBottomWidth:"4px"}}> <Link  to="about" className="text-3xl" onClick={(event) => handleClick("about")} spy={true} smooth={true} offset={50} duration={500}>
+            <li > <Link  to="about"  className="text-3xl nav-item"  spy={true} smooth={true} offset={-85} activeClass="active" duration={500}>
           About
         </Link></li>
-            <li className="text-lg cursor-pointer border-b-2 border-b-transparent hover:border-b-red-400 duration-500" style={section==="skill" ? activeBorder : {borderBottomWidth:"4px"}}> <Link  to="skill" className="text-3xl" onClick={(event) => handleClick("skill")} spy={true} smooth={true} offset={50} duration={500}>
+            <li > <Link  to="skill" activeClass="active" className="text-3xl nav-item"  spy={true} smooth={true} offset={-85} duration={500}>
          Skills
         </Link></li>
-            <li className="cursor-pointer border-b-2 border-b-transparent hover:border-b-red-400 duration-500"  style={section==="project" ? activeBorder : {borderBottomWidth:"4px"}}> <Link  to="project" className="text-3xl" onClick={(event) => handleClick("project")}  spy={true} smooth={true} offset={50} duration={500}>
+            <li  > <Link  to="project" className="text-3xl nav-item"  activeClass="active"  spy={true} smooth={true} offset={-85} duration={500}>
           Projects
         </Link></li>
-            <li className="text-lg cursor-pointer border-b-2 border-b-transparent hover:border-b-red-400 duration-500" style={section==="contact" ? activeBorder : {borderBottomWidth:"4px"}}> <Link  to="contact" className="text-3xl" onClick={(event) => handleClick("contact")} spy={true} smooth={true} offset={50} duration={500}>
+            <li  > <Link  to="contact" className="text-3xl nav-item"  activeClass="active"  spy={true} smooth={true} offset={-85} duration={500}>
           Contact
         </Link></li>
           </ul>
@@ -58,19 +58,19 @@ export const Navbar = () => {
         }  
         </div>
         <ul className={nav ? "animate__fadeInTopRight flex flex-col justify-center items-center absolute top-0 left-0 z-100 bg-[#0a192f] w-full h-screen" : "hidden"}>
-          <li className=" p-4"> <Link className="text-3xl"  to="home"  onClick={handlemenu} spy={true} smooth={true} offset={50} duration={500}>
+          <li className=" p-4"> <Link className="text-3xl"  to="home"  onClick={handlemenu} spy={true} smooth={true} offset={-58} duration={500}>
           Home
         </Link></li>
-          <li className=" p-4"><Link  to="about" className="text-3xl" onClick={handlemenu} spy={true} smooth={true} offset={50} duration={500}>
+          <li className="p-4" data-to-scrollspy-id="home"><Link  to="about" className="text-3xl" data-to-scrollspy-id="about" onClick={handlemenu} spy={true} smooth={true} offset={-58} duration={500}>
           About
         </Link></li>
-          <li className=" p-4"><Link  to="skill" className="text-3xl" onClick={handlemenu} spy={true} smooth={true} offset={50} duration={500}>
+          <li className=" p-4" ><Link  to="skill" className="text-3xl" data-to-scrollspy-id="skill" onClick={handlemenu} spy={true} smooth={true} offset={-58} duration={500}>
          Skills
         </Link></li>
-          <li className=" p-4"><Link  to="project" className="text-3xl" onClick={handlemenu} spy={true} smooth={true} offset={50} duration={500}>
+          <li className=" p-4"><Link  to="project" className="text-3xl" onClick={handlemenu} spy={true} smooth={true} offset={-58} duration={500}>
           Projects
         </Link></li>
-          <li className="p-4"><Link  to="contact" className="text-3xl" onClick={handlemenu} spy={true} smooth={true} offset={50} duration={500}>
+          <li className="p-4"><Link  to="contact" className="text-3xl" onClick={handlemenu} spy={true} smooth={true} offset={-58} duration={500}>
           Contact
         </Link></li>
         </ul>

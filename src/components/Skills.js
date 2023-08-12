@@ -15,6 +15,7 @@ import c from "../assets/c.png";
 import python from "../assets/python.png";
 import SkillCard from "./SkillCard";
 
+
 function Skills() {
   const skill = [
     {
@@ -77,11 +78,12 @@ function Skills() {
   ];
   return (
     <>
+   
       <div name="skill"
-        className="flex flex-col justify-normal gap-3 items-start bg-[#0a192f] w-full h-full"
-        id="skills"
+        className="flex flex-col justify-normal gap-3 items-start bg-[#0a192f] w-full h-full p-3"
+        id="skill"
       >
-        <div className="mx-6 md:mx-12  mt-32 flex flex-col gap-3 justify-between items-start md:p-8">
+        <div className="mx-6 md:mx-12 flex flex-col gap-3 justify-between items-start mt-6">
           {" "}
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
             Skills
@@ -106,6 +108,7 @@ function Skills() {
           </div>
         </div>
       </div>
+     
     </>
   );
 }

@@ -20,7 +20,7 @@
   margin-top: auto;
   }
   
- 
+
   
   ::before,
   ::after {
@@ -43,7 +43,23 @@
   .social-icons:hover{
     fill: white;
   }
-button:active{
-  border-bottom: red;
-  border-width:10px ;
+.nav-item{
+  border-bottom-width: 3px;
+  border-bottom-color: transparent;
+  cursor: pointer;
 }
+.nav-item:hover{
+  border-bottom-width: 3px;
+  border-bottom-color: #f87171;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out
+  
+  
+}
+.active {
+  border-bottom-width: 3px;
+  border-bottom-color: #f87171;
+  cursor: pointer;
+
+}
+

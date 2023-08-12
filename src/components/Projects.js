@@ -83,10 +83,10 @@ function Projects() {
     <>
       <div
         name="project"
-        className=" bg-[#16213E] flex flex-col justify-between items-start"
-        id="skills"
+        className=" bg-[#16213E] flex flex-col justify-between items-start p-3"
+        id="project"
       >
-        <div className="mx-6 md:mx-12  mt-32  flex flex-col gap-3 justify-between items-start md:p-8">
+        <div className="mx-6 md:mx-12  flex flex-col gap-3 justify-between items-start mt-6">
           {" "}
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400  ">
             Projects

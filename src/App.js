@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import { useEffect } from 'react';
 
 
+
 function App() {
   useEffect(() => {
     window.history.scrollRestoration = 'manual'
@@ -20,12 +21,14 @@ function App() {
     <div className="App">
         <Toaster></Toaster>
       <Navbar></Navbar>
+     
       <Home></Home>
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
       <Footer></Footer>
+  
    
     </div>
   );
