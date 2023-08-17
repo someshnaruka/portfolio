@@ -34,7 +34,7 @@ function Projects() {
       title: "Disney Hotstar-UI Clone",
       content:
         "Developed a basic Over-The-Top (OTT) platform using React.js to showcase movie details and provide an interactive user experience Utilized React.js, Redux, React Hooks and Functional Components to streamline development, resulting in reduced development time and improved code maintainability.",
-      link: "https://hotstar-clone-kappa.vercel.app/",
+      link: "https://hotstar-clone-someshnaruka.vercel.app/",
       gitlink: "https://github.com/someshnaruka/hotstar-clone",
       skill: [
         "React",
