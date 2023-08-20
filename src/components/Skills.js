@@ -14,7 +14,7 @@ import git from "../assets/github.png";
 import c from "../assets/c.png";
 import python from "../assets/python.png";
 import SkillCard from "./SkillCard";
-
+import firebase from "../assets/firebase.png"
 
 function Skills() {
   const skill = [
@@ -46,6 +46,10 @@ function Skills() {
     {
       img: mongo,
       name: "MongoDb",
+    },
+    {
+img:firebase,
+name:"Firebase"
     },
     {
       img: git,

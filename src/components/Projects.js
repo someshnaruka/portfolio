@@ -4,7 +4,7 @@ import food from "../assets/foodMart.png";
 import hotstar from "../assets/hotstar.png";
 import livinn from "../assets/livinn.png";
 import note from "../assets/notes.png";
-
+import dashboard from "../assets/dashboard.png"
 function Projects() {
   const projectData = [
     {
@@ -47,6 +47,28 @@ function Projects() {
       ],
     },
     {
+      img: dashboard,
+      title: "User Profile Management Dashboard",
+      content:
+        "A dynamic web application designed to facilitate efficient management of user profiles, including profile information, skills, experiences, education, and certifications. The project is built using the MERN stack (MongoDB, Express.js, React, and Node.js), incorporating various modern technologies to enhance user experience and functionality.",
+      link: "https://user-dashboard-blue.vercel.app/",
+      gitlink: "https://github.com/someshnaruka/User-Dashboard.git",
+      skill: [
+        "React",
+        "Redux",
+        "Node.Js",
+"Express.Js",
+"MongoDB",
+"Cloudinary",
+"(JWT)-Token",  
+        "TailWind CSS",
+        "React Hooks",
+"React LOader-Spinner",
+ 
+
+      ],
+    },
+    {
       img: livinn,
       title: "Livinn-Hospitality Website",
       content:
@@ -63,21 +85,7 @@ function Projects() {
         "Animate.css",
       ],
     },
-    {
-      img: note,
-      title: "Notes-Keeper Application",
-      content:
-        "Build a simple Notes keeper application with CRUD operation using React.js. Leveraged localStorage to make data persistent.",
-      link: "https://notes-app-topaz-gamma.vercel.app/",
-      gitlink: "https://github.com/someshnaruka/Notes-app",
-      skill: [
-        "React",
-        "Material UI-icons",
-        "Local Storage",
-        "Functional Components",
-        "React Hooks",
-      ],
-    },
+   
   ];
   return (
     <>

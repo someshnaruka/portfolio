@@ -9,7 +9,7 @@ function ProjectCard(props) {
         <h1 className=" text-md md:text-3xl border-b-2 border-b-white text-red-400 ">
           {props.title}
         </h1>
-        <div className="w-full flex flex-col justify-center items-center relative" onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
+        <div className="w-full h-1/2 flex flex-col justify-center items-center relative" onMouseEnter={()=>setHover(true)} onMouseLeave={()=>setHover(false)}>
           <a href={props.link} target="_blank" className="">
             {" "}
             <img
