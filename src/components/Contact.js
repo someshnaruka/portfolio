@@ -110,7 +110,7 @@ function Contact() {
           <button
             onClick={sendEmail}
             readOnly
-            className="flex text-center mx-auto my-3 border-[1.5px] border-white bg-transparent md:hover:bg-red-400 md:hover:border-red-400 shadow-lg shadow-black px-3 py-1 md:px-3 md:py-2 rounded-md hover:scale-105 duration-200 text-white  text-lg caret-transparent md:text-xl cursor-pointer"
+            className="flex text-center mx-auto my-3 border-[1.5px] border-white bg-transparent md:hover:bg-red-400 md:hover:border-red-400 shadow-lg shadow-black px-3 py-1 md:px-6 md:py-3 md:w-1/6 rounded-md hover:scale-105 duration-200 text-white justify-center text-lg caret-transparent md:text-xl cursor-pointer"
           >
             {" "}
             {isLoading ? (
@@ -134,7 +134,7 @@ function Contact() {
                 <span>Sending...</span>
               </div>
             ) : (
-              <span>Submit</span>
+              <span className="text-lg">Submit</span>
             )}
           </button>
         </form>
