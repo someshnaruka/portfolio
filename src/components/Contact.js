@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "./Modal";
 import { toast } from "react-hot-toast";
+import { Fade } from "react-awesome-reveal";
 
 function Contact() {
   const [show, setShow] = useState(false);
@@ -63,12 +64,15 @@ function Contact() {
   console.log(show);
   return (
     <>
+   
       <div
         name="contact"
         className="flex  h-screen flex-col items-start justify-normal  bg-[#0a192f]  relative p-3"
         id="contact"
       >
+      
         {show && <Modal onmodal={handleModal}></Modal>}
+        
 
         <div className="mx-6 md:mx-12 mt-6  flex justify-normal items-start flex-col ">
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
@@ -138,7 +142,9 @@ function Contact() {
             )}
           </button>
         </form>
+
       </div>
+   
     </>
   );
 }

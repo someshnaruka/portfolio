@@ -5,7 +5,7 @@ import Education from "./Education";
 import Work from "./Work";
 import Interests from "./Interests";
 import "animate.css";
-
+import { Fade } from "react-awesome-reveal";
 
 const About = (props) => {
   const [section, setSection] = useState("about");
@@ -28,6 +28,7 @@ const About = (props) => {
         className=" bg-[#16213E]  p-3"
         id="about"
       >
+      <Fade direction="left"  duration={1000}>
       <div className=" flex flex-col justify-between items-start  ">
         <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 mx-6 md:mx-12 mt-6 ">
           About Me
@@ -73,8 +74,9 @@ const About = (props) => {
           </div>
         </div>
       </div>
+      </Fade>
       </div>
-     
+      
     </>
   );
 };

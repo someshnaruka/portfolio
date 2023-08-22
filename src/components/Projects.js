@@ -5,6 +5,7 @@ import hotstar from "../assets/hotstar.png";
 import livinn from "../assets/livinn.png";
 import note from "../assets/notes.png";
 import dashboard from "../assets/dashboard.png"
+import { Fade } from "react-awesome-reveal";
 function Projects() {
   const projectData = [
     {
@@ -63,7 +64,7 @@ function Projects() {
 "(JWT)-Token",  
         "TailWind CSS",
         "React Hooks",
-"React LOader-Spinner",
+"React Loader-Spinner",
  
 
       ],
@@ -94,6 +95,7 @@ function Projects() {
         className=" bg-[#16213E] flex flex-col justify-between items-start p-3"
         id="project"
       >
+      <Fade direction="left">
         <div className="mx-6 md:mx-12  flex flex-col gap-3 justify-between items-start mt-6">
           {" "}
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400  ">
@@ -119,6 +121,7 @@ function Projects() {
             );
           })}
         </div>
+        </Fade>
       </div>
     </>
   );

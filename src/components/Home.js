@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import resume from "../assets/resume.pdf";
 import profile from "../assets/profile1.jpg";
 import { BiSolidDownload } from "react-icons/bi";
+import { Fade } from "react-awesome-reveal";
 
 
 export const Home = (props) => {
@@ -17,6 +18,7 @@ export const Home = (props) => {
       >
         <div className="text-white flex flex-col-reverse md:flex-row justify-center  items-center p-4">
           {" "}
+        
           <div className="flex flex-col  h-full md:gap-4 justify-between items-start mx-6 md:mx-12 md:mt-32 mt-10 w-full md:w-3/4 ">
             <h1 className="md:text-6xl text-xl p-4 text-[#ccd6f6]">
               {" "}
@@ -60,13 +62,18 @@ export const Home = (props) => {
               </button>
             </a>
           </div>
+  
+        
           <div className=" flex justify-center items-center mx-auto mt-32 w-full md:w-1/2 ">
+         
             <img
               src={profile}
               alt="Profile Image"
               className="object-cover rounded-none  md:rounded-xl shadow-black shadow-lg hover:shadow-base hover:scale-105 duration-200 cursor-pointer hover:shadow-[#8892b0]"
             ></img>
+            
           </div>
+        
         </div>
       </div>
     

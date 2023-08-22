@@ -15,6 +15,7 @@ import c from "../assets/c.png";
 import python from "../assets/python.png";
 import SkillCard from "./SkillCard";
 import firebase from "../assets/firebase.png"
+import { Fade } from "react-awesome-reveal";
 
 function Skills() {
   const skill = [
@@ -87,6 +88,7 @@ name:"Firebase"
         className="flex flex-col justify-normal gap-3 items-start bg-[#0a192f] w-full h-full p-3"
         id="skill"
       >
+      <Fade direction="right" >
         <div className="mx-6 md:mx-12 flex flex-col gap-3 justify-between items-start mt-6">
           {" "}
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
@@ -111,6 +113,7 @@ name:"Firebase"
             })}
           </div>
         </div>
+        </Fade>
       </div>
      
     </>
