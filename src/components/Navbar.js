@@ -24,9 +24,9 @@ export const Navbar = () => {
   return (
     <>
       <div className="fixed z-10 w-full h-[60px] md:h-[100px] flex justify-between items-center  bg-[#0a192f] px-2 text-[#D1D5DB] ">
-        <div>
+        <div className="flex justify-start items-start ">
           {" "}
-          <img src={logo} alt="Logo" className="w-[60px] md:w-[100px]"></img>
+          <img src={logo} alt="Logo" className="w-[60px] md:w-36 "></img>
         </div>
         {/* Menu section */}
         <div>

@@ -15,7 +15,7 @@ import c from "../assets/c.png";
 import python from "../assets/python.png";
 import SkillCard from "./SkillCard";
 import firebase from "../assets/firebase.png"
-import { Fade } from "react-awesome-reveal";
+import { Bounce, Fade, JackInTheBox, Slide } from "react-awesome-reveal";
 
 function Skills() {
   const skill = [
@@ -85,12 +85,13 @@ name:"Firebase"
     <>
    
       <div name="skill"
-        className="flex flex-col justify-normal gap-3 items-start bg-[#0a192f] w-full h-full p-3"
+        className="flex flex-col justify-normal gap-3 items-start bg-[#0a192f] w-full h-full  p-3"
         id="skill"
       >
-      <Fade direction="right" >
+      
         <div className="mx-6 md:mx-12 flex flex-col gap-3 justify-between items-start mt-6">
           {" "}
+          <Fade>
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
             Skills
           </h1>
@@ -98,9 +99,11 @@ name:"Firebase"
             {" "}
             These are the technologies I've worked with:
           </h2>
+          </Fade>
         </div>
 
        <div className="flex flex-col gap-3 mb-6 md:mb-12">
+       <Fade  >
           <div className="flex justify-center m-auto items-center flex-row flex-wrap md:gap-8 gap-5 ">
             {skill.map((post, index) => {
               return (
@@ -112,8 +115,9 @@ name:"Firebase"
               );
             })}
           </div>
+          </Fade>
         </div>
-        </Fade>
+      
       </div>
      
     </>

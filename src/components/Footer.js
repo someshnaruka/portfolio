@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaRegCopyright } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { Link } from "react-scroll";
 import { BiCopy } from "react-icons/bi";
+import { Fade } from "react-awesome-reveal";
 
 function Footer() {
   const today = new Date();
@@ -19,12 +20,15 @@ function Footer() {
 
   return (
     <>
+    
       <div className="footer flex w-full bg-[#374151] justify-between gap-4 items-center text-[#D1D5DB] flex-col pt-3">
+      <Fade className="flex justify-center items-center w-full">
         <p className="text-xl md:text-4xl w-1/2 text-center"> What’s next?</p>
         <p className="text-xs md:text-3xl w-1/2 text-center">
           Feel free to reach out to me if you're looking for a developer, have a
           query, or simply want to connect.
         </p>
+        
         <p className="md:w-1/2 w-full text-center flex justify-center items-center gap-2">
           <FiMail size={"25px"}></FiMail>
           <span className="text-lg ">someshnaruka@gmail.com </span>
@@ -51,6 +55,7 @@ function Footer() {
           ></FaRegCopyright> {today.getFullYear()} | Made with ❤️ by Somesh
           Naruka
         </div>
+        </Fade>
       </div>
     </>
   );

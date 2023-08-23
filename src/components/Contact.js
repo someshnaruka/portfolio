@@ -67,25 +67,27 @@ function Contact() {
    
       <div
         name="contact"
-        className="flex  h-screen flex-col items-start justify-normal  bg-[#0a192f]  relative p-3"
+        className="flex md:h-screen flex-col items-start justify-normal  bg-[#0a192f]  relative p-3 "
         id="contact"
       >
       
         {show && <Modal onmodal={handleModal}></Modal>}
         
-
-        <div className="mx-6 md:mx-12 mt-6  flex justify-normal items-start flex-col ">
+<Fade className="w-full">
+        <div className="mx-6 md:mx-12 md:mt-6 mt-8  flex justify-normal items-start flex-col  ">
           <h1 className="text-2xl md:text-5xl text-[#ccd6f6] font-bold border-b-4  border-b-red-400 ">
             {" "}
             Contact
           </h1>
-          <h2 className="text-sm md:text-2xl py-4 w-3/4 text-[#ccd6f6]">
+          <h2 className="text-sm md:text-2xl py-4 md:w-3/4 text-[#ccd6f6]">
             Submit the form below or shoot me an email- someshnaruka30@gmail.com
           </h2>
         </div>
+      
+        
         <form
           ref={form}
-          className="flex mx-6 md:mx-12 flex-col justify-normal gap-2 h-full p-4  items-center   text-black  w-3/4"
+          className="flex mx-6 md:mx-12 flex-col justify-normal gap-2 h-full p-4  items-center  text-black  md:w-3/4 md:mb-0 mb-20"
         >
           <input
             type="text"
@@ -141,10 +143,11 @@ function Contact() {
               <span className="text-lg">Submit</span>
             )}
           </button>
+       
         </form>
-
+        </Fade>
       </div>
-   
+      
     </>
   );
 }
