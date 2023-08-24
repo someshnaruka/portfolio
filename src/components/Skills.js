@@ -108,7 +108,7 @@ name:"Firebase"
             {skill.map((post, index) => {
               return (
                 <SkillCard
-                  key={post.index}
+                  key={index}
                   img={post.img}
                   name={post.name}
                 ></SkillCard>

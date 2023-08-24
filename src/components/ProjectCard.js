@@ -32,7 +32,7 @@ function ProjectCard(props) {
         <div className="flex justify-normal gap-3 items-center flex-wrap w-full ">
           {props.skill.map((post, index) => {
             return (
-              <div className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs md:text-lg px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
+              <div key={index} className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs md:text-lg px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
                 {post}
               </div>
             );

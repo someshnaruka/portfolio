@@ -18,7 +18,7 @@ export const Navbar = () => {
     // }
     function handleClick(value) {
       setSection(value);
-      console.log(section);
+   
     }
    
   return (
