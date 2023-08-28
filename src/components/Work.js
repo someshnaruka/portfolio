@@ -19,7 +19,7 @@ function Work() {
               <p className="w-full flex justify-end items-center gap-2 text-xs md:text-xl text-[#ccd6f6]">
                 {" "}
                 <BsFillCalendarDateFill color="#ccd6f6"></BsFillCalendarDateFill>
-                06/2022 - 08/2022
+                08/2021 - 08/2022
               </p>
               <p className="w-full flex justify-end items-center gap-2 text-xs md:text-xl text-[#ccd6f6]">
                 <MdLocationPin color="#ccd6f6"></MdLocationPin> Remote
@@ -30,7 +30,7 @@ function Work() {
             <ul className="text-[#ccd6f6] w-full flex flex-col gap-2">
               <li className=" text-xs md:text-xl w-full text-left">
                 • Gained valuable experience in utilizing HTML, CSS, and
-                JavaScript to create visually appealing and functional landing
+                JavaScript,React.Js to create visually appealing and functional landing
                 pages that effectively communicated the client’s message. 
              
               </li>
