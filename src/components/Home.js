@@ -63,9 +63,7 @@ export const Home = (props) => {
               </button>
             </a>
           </div>
-  
-          
-          <div className=" flex justify-center items-center mx-auto md:mt-32 mt-20 w-full md:w-1/2 ">
+          <div className=" flex justify-center items-center mx-6 md:mx-12 md:mt-32 mt-20 w-full md:w-1/2 ">
          <Slide direction="right">
             <img
               src={profile}
