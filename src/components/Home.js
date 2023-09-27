@@ -57,7 +57,7 @@ export const Home = (props) => {
                 <FaLinkedin size={"30px"} className="social-icons"></FaLinkedin>
               </a>
             </div>
-            <a href={resume} download={"Somesh Naruka Resume"} className="mt-4 ">
+            <a href={resume} download={"Somesh Naruka Resume"} className="mt-2 ">
               <button className="text-md md:text-2xl border border-white rounded-lg border-2 p-2 mx-3 md:hover:bg-red-400 hover:text-black hover:border-black flex justify-between items-center gap-2 hover:scale-105 duration-200 ">
                 Download Resume <BiSolidDownload></BiSolidDownload>
               </button>
