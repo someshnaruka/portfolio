@@ -35,7 +35,7 @@ const About = (props) => {
         </h1>
 
         <div className="flex  justify-center items-center m-6 md:m-12 ">
-          <div className="flex flex-col md:flex-row justify-between items-start shadow-lg shadow-black  h-full">
+          <div className="flex flex-col md:flex-row justify-between items-start shadow-md shadow-black  h-full">
             <div className="flex flex-col justify-between items-center md:w-1/4 w-full  text-[#ccd6f6] ">
               <img src={profile} alt="About Image"></img>
             </div>

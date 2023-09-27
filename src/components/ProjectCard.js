@@ -5,7 +5,7 @@ function ProjectCard(props) {
     const [hover,setHover]=useState(false);
   return (
     <>
-      <div className=" flex flex-col justify-evenly gap-2 items-start border-1 border-transparent rounded-xl md:w-1/3 w-full shadow-lg shadow-black m-4 overflow-hidden bg-[#1F2937] md:h-[600px] min-h-[300px] py-2 px-4">
+      <div className=" flex flex-col justify-evenly gap-2 items-start border-1 border-transparent rounded-xl md:w-1/3 w-full shadow-md shadow-black m-4 overflow-hidden bg-[#1F2937] md:h-[600px] min-h-[300px] py-2 px-4">
         <h1 className=" text-md md:text-3xl border-b-2 border-b-white text-red-400 ">
           {props.title}
         </h1>
@@ -22,9 +22,9 @@ function ProjectCard(props) {
           {/* <div className="w-full flex justify-center items-center gap-3 my-2 ">
             {" "}
             <a href={props.link} target="_blank">
-            <button className="border-2  text-xs hover:scale-110 duration-200 ease-in-out text-white border-transparent bg-transparent shadow-lg shadow-black px-2 py-1  hover:bg-red-400 hover:text-black rounded-lg">Demo</button> </a>
+            <button className="border-2  text-xs hover:scale-110 duration-200 ease-in-out text-white border-transparent bg-transparent shadow-md shadow-black px-2 py-1  hover:bg-red-400 hover:text-black rounded-md">Demo</button> </a>
             <a href={props.gitlink} target="_blank">
-            <button className="border-2 text-xs hover:scale-110 duration-200 ease-in-out text-white bg-transparent border-transparent  shadow-lg shadow-black px-2 py-1 hover:bg-red-400 hover:text-black rounded-lg">Code</button></a>
+            <button className="border-2 text-xs hover:scale-110 duration-200 ease-in-out text-white bg-transparent border-transparent  shadow-md shadow-black px-2 py-1 hover:bg-red-400 hover:text-black rounded-md">Code</button></a>
           </div> */}
         </div>
         <p className="text-xs text-left"></p>
@@ -32,7 +32,7 @@ function ProjectCard(props) {
         <div className="flex justify-normal gap-3 items-center flex-wrap w-full ">
           {props.skill.map((post, index) => {
             return (
-              <div key={index} className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs md:text-lg px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
+              <div key={index} className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs md:text-md px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
                 {post}
               </div>
             );
