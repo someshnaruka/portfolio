@@ -35,16 +35,16 @@ export const Navbar = () => {
             <Link  to="home" activeClass="active" className="text-3xl nav-item"  spy={true} smooth={true} offset={-100} duration={500}>
           Home
         </Link></li>
-            <li > <Link  to="about"  className="text-3xl nav-item"  spy={true} smooth={true} offset={-85} activeClass="active" duration={500}>
+            <li > <Link  to="about"  className="text-3xl nav-item"  spy={true} smooth={true} offset={-84} activeClass="active" duration={500}>
           About
         </Link></li>
-            <li > <Link  to="skill" activeClass="active" className="text-3xl nav-item"  spy={true} smooth={true} offset={-85} duration={500}>
+            <li > <Link  to="skill" activeClass="active" className="text-3xl nav-item"  spy={true} smooth={true} offset={-84} duration={500}>
          Skills
         </Link></li>
-            <li  > <Link  to="project" className="text-3xl nav-item"  activeClass="active"  spy={true} smooth={true} offset={-85} duration={500}>
+            <li  > <Link  to="project" className="text-3xl nav-item"  activeClass="active"  spy={true} smooth={true} offset={-84} duration={500}>
           Projects
         </Link></li>
-            <li  > <Link  to="contact" className="text-3xl nav-item"  activeClass="active"  spy={true} smooth={true} offset={-85} duration={500}>
+            <li  > <Link  to="contact" className="text-3xl nav-item"  activeClass="active"  spy={true} smooth={true} offset={-84} duration={500}>
           Contact
         </Link></li>
           </ul>
