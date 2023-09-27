@@ -59,17 +59,17 @@ const About = (props) => {
                 >
                   Work Experience
                 </p>
-                <p
+                {/* <p
                   className="text-xs md:text-2xl md:p-4 hover:border-b-2 hover:border-b-red-400 border-b-2 border-b-transparent transition-all ease-out duration-500  cursor-pointer"
                   onClick={(event) => handleClick("interest")}  style={section==="interest" ? activeBorder : {borderBottomWidth:"4px"}}
                 >
                   Interests
-                </p>
+                </p> */}
               </div>{" "}
               {section === "about" && <Overview></Overview>}
               {section === "education" && <Education></Education>}
               {section === "work" && <Work></Work>}
-              {section === "interest" && <Interests></Interests>}
+              {/* {section === "interest" && <Interests></Interests>} */}
             </div>
           </div>
         </div>

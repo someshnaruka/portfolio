@@ -28,7 +28,7 @@ function Work() {
           </div>
           <div>
             <ul className="text-[#ccd6f6] w-full flex flex-col gap-2">
-              <li className=" text-xs md:text-xl w-full text-left">
+              <li className="text-xs md:text-xl w-full text-left">
                 • Gained valuable experience in utilizing HTML, CSS, and
                 JavaScript,React.Js to create visually appealing and functional landing
                 pages that effectively communicated the client’s message. 
