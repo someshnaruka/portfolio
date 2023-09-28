@@ -27,12 +27,12 @@ function ProjectCard(props) {
             <button className="border-2 text-xs hover:scale-110 duration-200 ease-in-out text-white bg-transparent border-transparent  shadow-md shadow-black px-2 py-1 hover:bg-red-400 hover:text-black rounded-md">Code</button></a>
           </div> */}
         </div>
-        <p className="text-xs text-left"></p>
+        {/* <p className="text-xs text-left"></p> */}
 
         <div className="flex justify-normal gap-3 items-center flex-wrap w-full ">
           {props.skill.map((post, index) => {
             return (
-              <div key={index} className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs md:text-md px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
+              <div key={index} className="bg-transparent text-white font-light border-1 rounded-2xl shadow-md shadow-black text-xs md:text-lg px-2 py-1 cursor-pointer hover:scale-105 duration-200 ease-in-out hover:bg-red-400">
                 {post}
               </div>
             );
